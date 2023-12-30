@@ -25,28 +25,4 @@ export async function makeRequest({ url, method = 'get', accessToken, header = {
                 return Promise.reject(err)
             })
     }
-    // else if (method === "post") {
-    //     return axios.post(url, data, { headers: headers })
-    //         .then((response) => {
-    //             return Promise.resolve(response)
-    //         }).catch((err) => {
-    //             return Promise.reject(err)
-    //         })
-    // }
-    // else if (method == "delete") {
-    //     return axios.delete(url, { headers: headers })
-    //         .then((response) => {
-    //             return Promise.resolve(response)
-    //         }).catch((err) => {
-    //             return Promise.reject(err)
-    //         })
-    // }
-    /* else if (method == "patch") {
-        return axios.patch(url, data, { headers: defaultHeader, withCredentials: true })
-            .then((response) => {
-                return Promise.resolve(response)
-            }).catch((err) => {
-                return Promise.reject(err)
-            })
-    } */
 }
